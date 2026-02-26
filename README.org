@@ -22,6 +22,7 @@ Where:
 - =url= requires type =string=
 
 * Supported
+- JWT Authorizied pdf
 - Download
 - Print
 - Full Screen
