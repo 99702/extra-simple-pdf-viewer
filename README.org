@@ -10,7 +10,7 @@ Use it like:
 <app-simple-pdf-viewer
   (pdfLoaded)="false"
   (pdfLoadingStarts)="true"
-  [filenameForDownload]=""
+  [filenameForDownload]="filename.pdf"
   [httpHeaders]="headers"
   [src]="url"
   height="600px">
@@ -20,6 +20,7 @@ Use it like:
 Where:
 - =headers= requires type ={ Authorization: string, uniqueId: string }=
 - =url= requires type =string=
+- =filename.pdf= can be added dynamically from api
 
 * Supported
 - JWT Authorizied pdf
