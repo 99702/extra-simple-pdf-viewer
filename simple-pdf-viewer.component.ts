@@ -5,15 +5,12 @@ import {
 import { DomSanitizer, SafeResourceUrl } from '@angular/platform-browser';
 import { HttpClient } from '@angular/common/http';
 import { Subscription } from 'rxjs';
-import { SpinnerComponent } from './spinner/spinner.component';
 
 @Component({
   selector: 'app-simple-pdf-viewer',
   changeDetection: ChangeDetectionStrategy.OnPush,
   standalone: true,
-  imports: [
-    SpinnerComponent
-  ],
+  imports: [],
   template: `
     <div #pdfContainer class="relative w-full flex flex-col border border-gray-300 rounded-md shadow-sm overflow-hidden"
          [style.height]="height">
@@ -68,7 +65,7 @@ import { SpinnerComponent } from './spinner/spinner.component';
       @if (isLoading) {
         <div class="absolute inset-0 top-[44px] flex items-center justify-center bg-[#525659] z-10">
           <div class="flex flex-col items-center">
-            <app-spinner class="mb-3"></app-spinner>
+            <span class="mb-3">Loading......</span>
             <span class="text-sm font-medium text-gray-200 tracking-wide">Loading PDF...</span>
           </div>
         </div>
