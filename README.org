@@ -1,4 +1,4 @@
-* simple-pdf-viewer
+* extra-simple-pdf-viewer
 Copy-paste standalone component alternative to ngx-extended-pdf-viewer (Angular).
 
 * How to use
