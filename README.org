@@ -1,0 +1,30 @@
+* simple-pdf-viewer
+Copy-paste standalone component alternative to ngx-extended-pdf-viewer (Angular).
+
+* How to use
+Copy-paste =simple-pdf-viewer.component.ts= into your shared component directory of Angular.
+
+Use it like:
+
+#+BEGIN_SRC html
+<app-simple-pdf-viewer
+  (pdfLoaded)="false"
+  (pdfLoadingStarts)="true"
+  [filenameForDownload]=""
+  [httpHeaders]="headers"
+  [src]="url"
+  height="600px">
+</app-simple-pdf-viewer>
+#+END_SRC
+
+Where:
+- =headers= requires type ={ Authorization: string, uniqueId: string }=
+- =url= requires type =string=
+
+* Supported
+- Download
+- Print
+- Full Screen
+
+* Preview
+[[./screenshot.png]]
